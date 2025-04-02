@@ -42,14 +42,15 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: which python3
+        run: rustc --version
+
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          which python3
-          python3 --version
-          ls -lh /lib/x86_64-linux-gnu/
+          rustc --version
 
       - name: no forbidden fruit
         run: /bin/bash -c 'if ls forbidden >/dev/null 2>&1 ; then exit 1; else exit 0; fi'
