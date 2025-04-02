@@ -45,7 +45,7 @@ jobs:
         run: rustc --version
 
       - name: Install Rust
-        uses: dtolnay/rust-toolchain@stable
+        uses: dtolnay/rust-toolchain@1.85.0
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
