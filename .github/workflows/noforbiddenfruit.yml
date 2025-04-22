@@ -47,12 +47,9 @@ jobs:
           llvm-config-18 --shared-mode
           pwd
           ls -l
-          touch stepone
 
       - name: Run a multi-line script
         run: |
-          rustc --version
-          llvm-config-18 --shared-mode
           pwd
           ls -l
 
