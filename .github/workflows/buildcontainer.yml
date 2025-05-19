@@ -45,6 +45,7 @@ jobs:
             type=sha,prefix=rev-
           labels: |
             org.opencontainers.image.created={{commit_date 'YYYY-MM-DDTHH:mm:ss.SSS[Z]'}}
+          annotations: |
             org.opencontainers.image.title=Tenjin Dependency Builder
             org.opencontainers.image.description=Builder for Tenjin dependencies
         env:
